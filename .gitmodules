@@ -10,3 +10,15 @@
 [submodule "src/redis-counter/src/github.com/martini-contrib/render"]
 	path = src/redis-counter/src/github.com/martini-contrib/render
 	url = https://github.com/martini-contrib/render
+[submodule "src/redis-counter/src/github.com/codegangsta/inject"]
+	path = src/redis-counter/src/github.com/codegangsta/inject
+	url = https://github.com/codegangsta/inject.git
+[submodule "src/redis-counter/src/gopkg.in/redis.v1"]
+	path = src/redis-counter/src/gopkg.in/redis.v1
+	url = https://gopkg.in/redis.v1
+[submodule "src/redis-counter/src/github.com/golang/glog"]
+	path = src/redis-counter/src/github.com/golang/glog
+	url = https://github.com/golang/glog.git
+[submodule "src/redis-counter/src/github.com/vmihailenco/bufio"]
+	path = src/redis-counter/src/github.com/vmihailenco/bufio
+	url = https://github.com/vmihailenco/bufio.git
