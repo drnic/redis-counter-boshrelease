@@ -1,0 +1,12 @@
+[submodule "src/redis-counter/src/github.com/drnic/redis-counter-example"]
+	path = src/redis-counter/src/github.com/drnic/redis-counter-example
+	url = https://github.com/drnic/redis-counter-example.git
+[submodule "src/redis-counter/src/github.com/go-martini/martini"]
+	path = src/redis-counter/src/github.com/go-martini/martini
+	url = https://github.com/go-martini/martini.git
+[submodule "src/redis-counter/src/github.com/martini-contrib/binding"]
+	path = src/redis-counter/src/github.com/martini-contrib/binding
+	url = https://github.com/martini-contrib/binding
+[submodule "src/redis-counter/src/github.com/martini-contrib/render"]
+	path = src/redis-counter/src/github.com/martini-contrib/render
+	url = https://github.com/martini-contrib/render
