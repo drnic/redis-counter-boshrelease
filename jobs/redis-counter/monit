@@ -1,0 +1,5 @@
+check process redis_counter
+  with pidfile /var/vcap/sys/run/redis_counter/redis_counter.pid
+  start program "/var/vcap/jobs/redis_counter/bin/monit_debugger redis_counter_ctl '/var/vcap/jobs/redis_counter/bin/redis_counter_ctl start'"
+  stop program "/var/vcap/jobs/redis_counter/bin/monit_debugger redis_counter_ctl '/var/vcap/jobs/redis_counter/bin/redis_counter_ctl stop'"
+  group vcap
