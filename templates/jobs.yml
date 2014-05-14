@@ -1,5 +1,6 @@
 meta:
   environment: ~
+  job_templates: (( merge ))
 
 update:
   canaries: 1
@@ -9,22 +10,15 @@ update:
   serial: false
 
 jobs:
-  - name: redis_counter_leader_z1
-    template: redis-counter
-    instances: 0
-    resource_pool: small_z1
-    networks: (( merge ))
   - name: redis_counter_z1
-    template: redis-counter
+    templates: (( meta.job_templates ))
     instances: 0
     resource_pool: small_z1
     networks: (( merge ))
     update:
       canaries: 10
-    properties:
-      redis_counter:
-        leader_address: (( merge ))
 
 networks: (( merge ))
 
-properties: {}
+properties:
+  consul: (( merge ))

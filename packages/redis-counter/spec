@@ -2,4 +2,5 @@
 name: redis-counter
 dependencies:
 - golang
-files: []
+files:
+- redis-counter/**/*

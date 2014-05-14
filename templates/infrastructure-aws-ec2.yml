@@ -9,17 +9,10 @@ meta:
     version: latest
 
 jobs:
-  - name: redis_counter_leader_z1
+  - name: redis_counter_z1
     instances: 1
     networks:
       - name: (( meta.network_name ))
-  - name: redis-counter_z1
-    instances: 2
-    networks:
-      - name: (( meta.network_name ))
-    properties:
-      redis_counter:
-        leader_address: (( "0.redis-counter-leader-z1.redis-counter1." meta.environment "." meta.dns_root ))
 
 compilation:
   cloud_properties:

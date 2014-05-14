@@ -4,7 +4,11 @@ meta:
   dns_root: microbosh
   network_name: redis_counter1
   security_groups:
-    - redis_counter
+    - webapp
+  job_templates:
+    - name: redis_counter
+      release: redis-counter
+
 
 director_uuid: PLACEHOLDER-DIRECTOR-UUID
 
