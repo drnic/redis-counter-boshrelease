@@ -17,7 +17,13 @@ case $1 in
     # store pid in $PIDFILE
     echo $$ > $PIDFILE
 
-    exec chpst -u vcap:vcap redis-counter-example -config $JOB_DIR/config/redis.json \
+    # go apps do not contain non-go asset files
+    # so still need to run app within its original project
+    # to locate assets
+    cd /var/vcap/packages/redis-counter
+
+    # exec chpst -u vcap:vcap redis-counter-example -config $JOB_DIR/config/redis.json \
+    exec redis-counter-example -config $JOB_DIR/config/redis.json \
          >>$LOG_DIR/$JOB_NAME.stdout.log \
          2>>$LOG_DIR/$JOB_NAME.stderr.log
 
