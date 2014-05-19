@@ -6,6 +6,8 @@ export GOPATH=$PWD/redis-counter
 
 mkdir -p ${BOSH_INSTALL_TARGET}/bin
 
-go install github.com/drnic/redis-counter-example
+cd redis-counter/src/github.com/drnic/redis-counter-example
+go build
 find . -maxdepth 3
-cp -a $PWD/redis-counter/bin/redis-counter-example ${BOSH_INSTALL_TARGET}/bin
+mv redis-counter-example ${BOSH_INSTALL_TARGET}/bin
+cp -a . ${BOSH_INSTALL_TARGET}/
