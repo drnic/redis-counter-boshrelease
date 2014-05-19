@@ -8,6 +8,8 @@ meta:
   job_templates:
     - name: redis_counter
       release: redis-counter
+  stemcell:
+    name: STEMCELL
 
 
 director_uuid: PLACEHOLDER-DIRECTOR-UUID
