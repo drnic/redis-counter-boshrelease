@@ -17,6 +17,7 @@ jobs:
     networks: (( merge ))
     update:
       canaries: 10
+    properties: ~
 
 networks: (( merge ))
 

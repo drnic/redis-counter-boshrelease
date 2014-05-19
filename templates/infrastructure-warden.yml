@@ -18,6 +18,9 @@ jobs:
     networks:
       - name: (( meta.network_name ))
         static_ips: ~
+    properties:
+      redis:
+        host: master.redis-warden.service.consul
 
 compilation:
   cloud_properties:

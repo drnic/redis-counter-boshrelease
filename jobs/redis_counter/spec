@@ -12,7 +12,6 @@ templates:
 properties:
   redis.host:
     description: Hostname/IP to redis master
-    default: master.redis.service.consul
   redis.port:
     description: Port to connect to redis server
     default: 6379
