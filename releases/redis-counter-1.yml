@@ -1,0 +1,22 @@
+---
+packages:
+- name: golang
+  version: 1
+  sha1: ecdba2c3f60edc22c61889b9e82a6449d6a5ba34
+  fingerprint: 3e1381e5be3be46828b2cf45a6bc61b57f93e700
+  dependencies: []
+- name: redis-counter
+  version: 1
+  sha1: 3eb6fcfa7603c07a77c62dc3d8538c829dccd475
+  fingerprint: d5bb58937a81fb34b88f546a2a4d8e16f69cd80c
+  dependencies:
+  - golang
+jobs:
+- name: redis_counter
+  version: 1
+  fingerprint: f23c69a6593631c3ca05465e5654f057317d791f
+  sha1: 76aae3fa5f5fae513506973caa8226335d46733d
+commit_hash: 2c9cb021
+uncommitted_changes: true
+name: redis-counter
+version: 1
